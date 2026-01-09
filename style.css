@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Layout utama */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Sidebar kiri */
+.sidebar {
+    width: 30%;
+    background-color: #181818;
+    text-align: center;
+    padding: 30px 20px;
+    border-right: 2px solid #00bcd4;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    color: #00bcd4;
+    margin: 10px 0 5px;
+}
+
+.sidebar p {
+    color: #ccc;
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian kanan */
+.main-content {
+    width: 70%;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #00bcd4;
+    border-left: 4px solid #00bcd4;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* ====== TABEL PENDIDIKAN ====== */
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.edu-table thead {
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+.edu-table th, 
+.edu-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.edu-table tbody tr:nth-child(even) {
+    background-color: #242424;
+}
+
+.edu-table tbody tr:hover {
+    background-color: #333;
+}
+
+/* Skill list */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #2a2a2a;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* Responsif (untuk HP) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        border-right: none;
+    }
+
+    .sidebar {
+        border-bottom: 2px solid #00bcd4;
+    }
+}
